@@ -1,0 +1,11 @@
+.wolfenstein{
+    float: right;
+}
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/453/519/688/wolfenstein-the-new-order-wolfenstein-wallpaper-preview.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
