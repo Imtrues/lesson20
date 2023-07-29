@@ -2,143 +2,235 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dark mode
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="theme-light.css">
+       <link rel="stylesheet" href="theme-dark.css">
+        <head>
+            ...
+            <!-- Добавляем в head пустой тег link -->
+            <link rel="stylesheet" title="theme" href="#">
+        </head>
+    </head>
 </head>
 
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Wolfenstein_The_New_Order_cover.jpg" alt="" class="wolfenstein">
-         <h1>Wolfenstein: The New Order</h1>
+       
+        <div class="theme">
+            <svg class="changeTheme" data-theme="light" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;"> <path d="M20 30C22.6522 30 25.1957 28.9464 27.0711 27.0711C28.9464 25.1957 30 22.6522 30 20C30 17.3478 28.9464 14.8043 27.0711 12.9289C25.1957 11.0536 22.6522 10 20 10C17.3478 10 14.8043 11.0536 12.9289 12.9289C11.0536 14.8043 10 17.3478 10 20C10 22.6522 11.0536 25.1957 12.9289 27.0711C14.8043 28.9464 17.3478 30 20 30V30ZM20 0C20.3315 0 20.6495 0.131696 20.8839 0.366117C21.1183 0.600537 21.25 0.918479 21.25 1.25V6.25C21.25 6.58152 21.1183 6.89946 20.8839 7.13388C20.6495 7.3683 20.3315 7.5 20 7.5C19.6685 7.5 19.3505 7.3683 19.1161 7.13388C18.8817 6.89946 18.75 6.58152 18.75 6.25V1.25C18.75 0.918479 18.8817 0.600537 19.1161 0.366117C19.3505 0.131696 19.6685 0 20 0V0ZM20 32.5C20.3315 32.5 20.6495 32.6317 20.8839 32.8661C21.1183 33.1005 21.25 33.4185 21.25 33.75V38.75C21.25 39.0815 21.1183 39.3995 20.8839 39.6339C20.6495 39.8683 20.3315 40 20 40C19.6685 40 19.3505 39.8683 19.1161 39.6339C18.8817 39.3995 18.75 39.0815 18.75 38.75V33.75C18.75 33.4185 18.8817 33.1005 19.1161 32.8661C19.3505 32.6317 19.6685 32.5 20 32.5V32.5ZM40 20C40 20.3315 39.8683 20.6495 39.6339 20.8839C39.3995 21.1183 39.0815 21.25 38.75 21.25H33.75C33.4185 21.25 33.1005 21.1183 32.8661 20.8839C32.6317 20.6495 32.5 20.3315 32.5 20C32.5 19.6685 32.6317 19.3505 32.8661 19.1161C33.1005 18.8817 33.4185 18.75 33.75 18.75H38.75C39.0815 18.75 39.3995 18.8817 39.6339 19.1161C39.8683 19.3505 40 19.6685 40 20ZM7.5 20C7.5 20.3315 7.3683 20.6495 7.13388 20.8839C6.89946 21.1183 6.58152 21.25 6.25 21.25H1.25C0.918479 21.25 0.600537 21.1183 0.366117 20.8839C0.131696 20.6495 0 20.3315 0 20C0 19.6685 0.131696 19.3505 0.366117 19.1161C0.600537 18.8817 0.918479 18.75 1.25 18.75H6.25C6.58152 18.75 6.89946 18.8817 7.13388 19.1161C7.3683 19.3505 7.5 19.6685 7.5 20ZM34.1425 5.8575C34.3768 6.09191 34.5085 6.40979 34.5085 6.74125C34.5085 7.07271 34.3768 7.39059 34.1425 7.625L30.6075 11.1625C30.4913 11.2786 30.3533 11.3706 30.2016 11.4333C30.0498 11.4961 29.8871 11.5283 29.7229 11.5282C29.3912 11.528 29.0731 11.396 28.8387 11.1612C28.7227 11.045 28.6307 10.9071 28.5679 10.7553C28.5052 10.6035 28.4729 10.4409 28.4731 10.2766C28.4733 9.94491 28.6053 9.62689 28.84 9.3925L32.375 5.8575C32.6094 5.62316 32.9273 5.49152 33.2588 5.49152C33.5902 5.49152 33.9081 5.62316 34.1425 5.8575V5.8575ZM11.16 28.84C11.3943 29.0744 11.526 29.3923 11.526 29.7237C11.526 30.0552 11.3943 30.3731 11.16 30.6075L7.625 34.1425C7.38925 34.3702 7.07349 34.4962 6.74575 34.4933C6.418 34.4905 6.10449 34.359 5.87273 34.1273C5.64097 33.8955 5.50951 33.582 5.50666 33.2543C5.50381 32.9265 5.6298 32.6108 5.8575 32.375L9.3925 28.84C9.62691 28.6057 9.94479 28.474 10.2762 28.474C10.6077 28.474 10.9256 28.6057 11.16 28.84V28.84ZM34.1425 34.1425C33.9081 34.3768 33.5902 34.5085 33.2588 34.5085C32.9273 34.5085 32.6094 34.3768 32.375 34.1425L28.84 30.6075C28.6123 30.3717 28.4863 30.056 28.4892 29.7282C28.492 29.4005 28.6235 29.087 28.8552 28.8552C29.087 28.6235 29.4005 28.492 29.7282 28.4892C30.056 28.4863 30.3717 28.6123 30.6075 28.84L34.1425 32.375C34.3768 32.6094 34.5085 32.9273 34.5085 33.2588C34.5085 33.5902 34.3768 33.9081 34.1425 34.1425ZM11.16 11.1625C10.9256 11.3968 10.6077 11.5285 10.2762 11.5285C9.94479 11.5285 9.62691 11.3968 9.3925 11.1625L5.8575 7.625C5.73811 7.50969 5.64288 7.37176 5.57737 7.21926C5.51186 7.06675 5.47738 6.90273 5.47594 6.73675C5.47449 6.57078 5.50612 6.40618 5.56897 6.25256C5.63182 6.09894 5.72464 5.95937 5.84201 5.84201C5.95937 5.72464 6.09894 5.63182 6.25256 5.56897C6.40618 5.50612 6.57078 5.47449 6.73675 5.47594C6.90273 5.47738 7.06675 5.51186 7.21926 5.57737C7.37176 5.64288 7.50969 5.73811 7.625 5.8575L11.16 9.3925C11.2764 9.50861 11.3688 9.64655 11.4318 9.79842C11.4948 9.95028 11.5272 10.1131 11.5272 10.2775C11.5272 10.4419 11.4948 10.6047 11.4318 10.7566C11.3688 10.9084 11.2764 11.0464 11.16 11.1625V11.1625Z" fill="#ffffff"></path></svg>
+            <svg class="changeTheme" data-theme="dark" width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;"> <path d="M15 0.695136C15.244 0.991667 15.3935 1.35457 15.4292 1.73694C15.4648 2.11932 15.385 2.5036 15.2 2.84014C13.7546 5.49382 12.9998 8.46837 13.005 11.4901C13.005 21.5426 21.2 29.6826 31.3 29.6826C32.6175 29.6826 33.9 29.5451 35.1325 29.2826C35.5103 29.2008 35.9039 29.2321 36.264 29.3726C36.6241 29.5131 36.9349 29.7566 37.1575 30.0726C37.3925 30.4013 37.5123 30.7983 37.4983 31.2021C37.4842 31.6058 37.3372 31.9936 37.08 32.3051C35.1192 34.7137 32.6456 36.6544 29.8396 37.9856C27.0335 39.3168 23.9658 40.0051 20.86 40.0001C9.335 40.0001 0 30.7151 0 19.2751C0 10.6651 5.285 3.28014 12.81 0.150136C13.1848 -0.00828447 13.601 -0.0407995 13.9959 0.057475C14.3908 0.15575 14.7431 0.379507 15 0.695136V0.695136Z" fill="#222222"></path></svg>
+        </div>
+       
+       
+        <h1>Call of duty 2 (Game optional )</h1>
     </header>
     <h3>
-        Wolfenstein: The New Order is a 2014 action-adventure first-person shooter video game developed by MachineGames
-        and published by Bethesda Softworks. It was released on 20 May 2014 for PlayStation 3, PlayStation 4,
-        Windows, Xbox 360, and Xbox One. The game is the seventh main entry in the Wolfenstein series, set in an
-        alternate history 1960s Europe where the Nazis won the Second World War. The story follows war veteran
-        William "B.J." Blazkowicz and his efforts to stop the Nazis from ruling over the world. The game is played
-        from a first-person perspective and most of its levels are navigated on foot. The story is arranged in
-        chapters, which players complete in order to progress. A morality choice in the prologue alters the game's
-        storyline; some characters and small plot points are replaced throughout the two timelines. The game
-        features a variety of weapons, most of which can be dual wielded. A cover system is present. Development
-        began in 2010, soon after id Software gave MachineGames the rights for the franchise. The development team
-        envisioned Wolfenstein: The New Order as a first-person action-adventure game, taking inspiration from
-        previous games in the series and particularly focusing on the combat and adventure elements. The game
-        attempts to delve into character development of Blazkowicz, unlike its predecessors—a choice from the
-        developers to interest players in the story. They aimed to portray him in a heroic fashion. At release,
-        Wolfenstein: The New Order received generally positive reviews, with praise particularly directed at the
-        combat and the narrative of the game. Critics considered it a positive change to the series and nominated it
-        for multiple year-end accolades, including Game of the Year and Best Shooter awards from several gaming
-        publications. A stand-alone expansion, Wolfenstein: The Old Blood, was released in May 2015 and is set
-        before the events of the game. A sequel, Wolfenstein II: The New Colossus, was released in October
-        2017.
+        Call of Duty 2, рус. <<Зов Долга 2>> — компьютерная игра в жанре шутер от первого лица,
+            вторая игра в серии Call of Duty. Была разработана компанией Infinity Ward, в содействии с Pi Studios, и
+            выпущена компанией Activision 25 октября 2005 года для ПК и 22 ноября 2005 года для консоли Xbox 360. Сюжет
+            игры
+            основан на событиях Второй мировой войны и состоит из трёх кампаний, где игроку даётся возможность быть
+            солдатом
+            советской, британской и американской армий. В России игра издаётся фирмой 1С.
+
+            Call of Duty 2 стала очень популярной игрой во время запуска Xbox 360, продавшись тиражом более, чем 250
+            тысяч
+            экземпляров за первую неделю[3].
+            
     </h3>
- 
+
     <h2>
-        Gameplay
+       Геймплей
     </h2>
     <hr>
     <h3>
-        Gameplay
-        Wolfenstein: The New Order is an action-adventure and first-person shooter video game played from a first-person
-        perspective. To progress through the story, players fight enemies throughout levels.[1] The game utilizes a
-        health system in which health is divided into separate sections that regenerate; if an entire section is lost,
-        players must use a health pack to replenish the missing health.[2]
+        Как и в первой части серии, игрок выступает в роли одного из бойцов советской, американской и британской армий,
+        ведущих боевые действия против немецких войск.
 
+        Важным отличием от первой части является отсутствие шкалы здоровья. Теперь нельзя точно сказать, насколько
+        здоров игрок. Но при нанесении достаточно сильного урона экран краснеет, игрок начинает тяжело дышать, тем самым
+        давая понять, что он ранен. При этом аптечки были убраны из игры — теперь игрок самостоятельно восстанавливается
+        от ранений с течением времени.
 
-        Players use melee attacks, firearms, and explosives to fight enemies, and may run, jump, and occasionally swim
-        to navigate through the locations. Melee attacks can be used to silently take down enemies without being
-        detected. Alternatively, players can approach enemies in direct combat, which often results in an intense
-        firefight between the two parties.[3]
+        В игре представлен широкий ассортимент оружия, однако за раз игрок может носить с собой только 2 вида (не считая
+        осколочных и дымовых гранат по 4 штуки). Оружие и осколочные гранаты можно подбирать непосредственно с убитых
+        врагов и союзников. Также в некоторых миссиях оружие (в частности особое — гранатомёты, снайперские винтовки,
+        дымовые гранаты) можно найти в бункерах, зданиях, либо прямо на улице. Помимо переносимого оружия в бою можно
+        использовать стационарные пулемёты (Браунинг M1919 и MG-42), зенитные и артиллерийские орудия. Также в
+        распоряжении игрока имеется бинокль, который в одной из миссий понадобится для наведения артиллерийского огня. В
+        отдельных миссиях потребуется использование магнитных мин и взрывчатки для обезвреживания вражеской
+        бронетехники, уничтожения артиллерии и подрыва дверей бункеров.
 
-        A cover system can be used in combat as assistance against enemies. Players have the ability to lean around,
-        over, and under cover, which can be used as a tactical advantage during shootouts and stealth levels.[4] The
-        game gives players a wide variety of weapon options; they can be found on the ground, retrieved from dead
-        enemies, or removed from their stationary position and carried around.[5] Weapon ammunition must be manually
-        retrieved from the ground or from dead enemies.[6] Players have access to a weapon inventory, which allows them
-        to carry as many weapons as they find. With some of these weapons, players have the ability to dual wield,
-        giving them an advantage over enemies by dealing twice as much damage.[3] Players can customize weapons through
-        the use of upgrades; for example, a rocket launcher can be attached to the side of an assault rifle, and a wire
-        cutting tool can be upgraded to a laser gun.[7]
+        Представленные задания разнообразны: захват зданий, удержание обороны, уничтожение артиллерии и бронетехники.
+        Также представлены миссии, в которых игрок берёт на себя роль командира танка. Однако главная цель абсолютно
+        всех миссий — выжить самому, поскольку провалить миссию можно лишь умерев (если не учитывать провал в случае
+        намеренного убийства союзника или пленного). Все ключевые персонажи (например, командиры отрядов) в принципе
+        бессмертны (если их смерть не является частью сюжета, либо не спровоцирована самим игроком), а второстепенные
+        солдаты, играющие роль массовки, в большинстве миссий «генерируются» заново после смерти.
+
+        В Call of Duty 2 игрок не выполняет роль рэмбо-одиночки — чаще всего его поддерживают несколько союзных солдат.
+        Однако большинство убийств, конечно же, придётся на его долю. Все миссии построены на скриптах — большинство
+        ключевых событий не происходят до тех пор, пока игрок не предпримет какое-либо действие (чаще всего — побежит
+        вперёд, начав атаку). При этом в большинстве миссий солдаты противника будут появляться снова и снова до тех
+        пор, пока не будет запущена следующая стадия скрипта. Поэтому тактика отсиживания в укромном месте или отстрела
+        издалека нацистов из снайперской винтовки в большинстве случаев будет бесполезна — патроны не бесконечны, в
+        отличие от солдат противника.
     </h3>
 
     <h2>
         Synopsis
     </h2>
     <hr>
-    <h2>Setting and characters</h2>
-    The New Order is set in an alternate universe where Nazi Germany have managed to deploy advanced technologies,
-    enabling them to turn the tide against the Allies and ultimately win World War II. Its storyline is loosely
-    connected to 2009's Wolfenstein and features returning characters Kreisau Circle leader Caroline Becker (Bonita
-    Friedericy) and SS-Oberst-Gruppenführer Wilhelm "Deathshead" Strasse (Dwight Schultz), the nemesis of series
-    protagonist, U.S. special forces operative Captain William "B.J." Blazkowicz (Brian Bloom).[5][8][9] The New Order
-    has a branching narrative: during the prologue chapter, Deathshead forces Blazkowicz to decide the fate of one of
-    his comrades. The player's choice as Blazkowicz will create two timeline versions of the game's storyline, where
-    alternate characters are established as replacements for characters who otherwise would have significant roles in
-    the plot.[10]
+    <h2>Отзывы</h2>
+    Call of Duty 2 получила множество положительных рецензий. Тем не менее многие рецензии имели немного критики. В
+    основном, критике подверглась новая система здоровья, которая позволяет игроку восстанавливать его, переждав
+    некоторое время в укрытии — по мнению рецензентов это сделало игру менее реалистичной[8]. Другие считают, что
+    ремейки оригинальных карт были интересны, но в игре могло было быть больше новых карт[6]. По поводу Windows-версии
+    было много критики о низкой производительности игры[12].
 
-    After the prologue chapter, either Scottish pilot Fergus Reid (Gideon Emery) or U.S. Army Private Probst Wyatt III
-    (A.J. Trauth) survives and escapes Deathshead's compound.[10] Blazkowicz suffers a severe head injury during the
-    escape attempt and lapses into a persistent vegetative state. He is brought to a psychiatric asylum in Poland, where
-    he is cared for by its head nurse Anya Oliwa (Alicja Bachleda), and her parents, who run the facility under the Nazi
-    regime. Blazkowicz watches as Anya's parents are regularly forced to hand patients over to Nazi authorities, who
-    deem them Untermenschen for their mental disabilities and take them to Deathshead for unknown experimentation.[11]
-    Blazkowicz and Anya enter into a romantic relationship throughout the game's narrative.[12]
+    Call of Duty 2 стал самой популярной игрой при запуске Xbox 360, продавшись тиражом в 250,000 копий за первую
+    неделю[3]. На июль 2006 было продано уже 1.4 миллиона копий для Xbox 360[19].
 
-    Other major characters include Frau Engel (Nina Franoszek), the Commandant of an extermination camp in northern
-    Croatia known as Camp Belica; Set Roth (Mark Ivanir), a member of a Jewish mystical secret society known as the
-    Da'at Yichud who is incarcerated at Camp Belica; Bombate (Peter Macon), a Namibian prisoner of Camp Belica who
-    assists Blazkowicz; and Max Hass (Alex Solowitz), a seemingly brain-damaged member of the Resistance who is looked
-    after by former Nazi member Klaus Kreutz (Ken Lally).[13]
-    <h2>Plot</h2>
-    <h3>In July 1946, Blazkowicz and his comrades take part in an air raid against a fortress and weapons laboratory run
-        by Deathshead but are captured and brought to a human experimentation laboratory. Blazkowicz escapes from the
-        laboratory's emergency incinerator, although he is severely injured. He is admitted to a Polish psychiatric
-        asylum where he remains in a catatonic state. In 1960, the Nazi regime orders the asylum to be "shut down" and
-        executes Anya's parents when they resist. Blazkowicz awakens from his vegetative state and eliminates the
-        extermination squad before escaping with Anya.[11] Blazkowicz and Anya drive to her grandparents' farm, where
-        they inform him that the Nazis had defeated the United States in 1948 and that the members of the ensuing
-        anti-Nazi Resistance have been captured. Blazkowicz interrogates a captured officer from the asylum, learning
-        that the top members of the Resistance are imprisoned in Berlin's Eisenwald Prison. Anya's grandparents smuggle
-        her and Blazkowicz through a checkpoint in Stettin before they travel to Berlin. During the train ride,
-        Blazkowicz encounters Frau Engel for the first time.[12] When they arrive, Anya helps Blazkowicz break into
-        Eisenwald Prison, where he rescues the person he spared fourteen years prior (Fergus or Wyatt)[14] and finds
-        that the Resistance movement is led by Caroline, who was left paralyzed due to an incident at Isenstadt in
-        2009's Wolfenstein.[15]
+<hr>
+    <h2>О чем игра???</h2>
+    <h3>Основными условиями победы в многопользовательском режиме является достижение максимального или большего
+        количества очков командой или игроком (в режиме перестрелки) по истечении времени раунда. Дополнительные условия
+        победы оговорены отдельно. Очки начисляются за убийства игроков вражеской команды (по 1 очку за 1 убийство),
+        возврат флага на базу до его захвата вражеской командой (2 очка игроку), захват вражеского флага (10 очков
+        игроку), уничтожение вражеского штаба (10 очков команде), удержание собственного штаба (1 очко команде в 1
+        секунду); за самоубийства и убийства игроков дружественной команды снимается по 1 очку.
 
-        The Resistance executes an attack on a Nazi research facility in London, bombing their operations base, and
-        stealing secret documents and prototype stealth helicopters.[16] The documents reveal the Nazis are relying on
-        reverse-engineered technology derived from the Da'at Yichud, which created such inventions as energy weapons,
-        computer artificial intelligence, and super concrete; however, it is revealed that someone is tampering with the
-        super concrete's formula, making it susceptible to mold deterioration. The Resistance discovers a match with
-        Set, who is imprisoned in Camp Belica.[17] Blazkowicz agrees to go undercover inside Camp Belica and meets Set,
-        who tells him that the Nazis have co-opted Da'at Yichud technology to mass-produce and control robots, and
-        offers to help the Resistance in return for the destruction of the camp. Blazkowicz finds a battery for a device
-        that controls Camp Belica's robots, which he and Set then use to incapacitate Engel, destroy the camp, and
-        liberate its prisoners.[18]
+    </h3>
+    <hr>
+    <h2>Компания</h2>
+    Всего в игре представлено 3 кампании, охватывающие несколько периодов войны с 1941 по 1945 года. Каждая кампания разделена на задания, а каждое задание — на эпизоды. В сумме всего 10 заданий, 27 эпизодов (включая обучающий).
 
-        Set reveals that the Nazis' discovery of one of the Da'at Yichud caches, which included advanced technology
-        centuries ahead of its time, allowed Germany to surpass the Allies in military might. Set agrees to assist the
-        Resistance by revealing the location of one such cache but states that the Resistance requires a U-boat to
-        access it.[19] Blazkowicz obtains a U-boat but discovers that it is the flagship of the Nazis' submarine fleet,
-        and is equipped with a cannon designed to fire nuclear warheads, which requires keycodes from the Nazi lunar
-        research facility to operate.[20] Blazkowicz uses the Spindly Torque—a Da'at Yichud spherical device capable of
-        destroying super concrete—to steal the identity of a Nazi lunar scientist and infiltrate the Lunar Base.[21] He
-        succeeds at obtaining the keycodes, but upon returning to Earth, he discovers that Engel has mounted an assault
-        on the Resistance base, capturing some of its members on behalf of Deathshead.[22]
+Сюжет игры во многих случаях перекликается с фактическим ходом Второй мировой войны. Так, например, в действительности имело место уничтожение британской автоколонны, идущей на Кан, немецким танком Тигр, отмеченное в записках персонажа Джона Дэвиса перед миссией "Коробочка".
 
-        The Resistance use the Spindly Torque to break open Deathshead's compound. After liberating the compound's
-        captives, Blazkowicz travels to the top of the tower, where Deathshead's workshop is located. Inside, Deathshead
-        reveals to Blazkowicz that he possesses the preserved brain of the soldier Blazkowicz chose to die, putting it
-        in a robot. The robot comes alive and assaults Blazkowicz, who defeats it, destroys the brain, and puts his
-        friend to rest. Commandeering a larger robot mecha, Deathshead attacks Blazkowicz, who gets the upper hand and
-        destroys the robot. He drags Deathshead out of the wreckage and attacks him, who pulls out and arms a grenade
-        which kills himself and gravely wounds Blazkowicz. As he crawls towards a window, Blazkowicz mentally recites
-        "The New Colossus" as he watches the Resistance survivors board a helicopter. Believing they have reached
-        safety, Blazkowicz gives instructions to fire the nuclear cannon.[23] After the credits, a helicopter is heard
-        approaching.[5]</h3>
+Миссия по захвату Рейхстага в Берлине, который ознаменовал окончание войны в Европе, унёсшей более 50 миллионов жизней, в игре отсутствует (штурм Рейхстага отражён в первой части Call of Duty). Вместо этого показывается документальный чёрно-белый видеоролик, в котором рассказывается о заключительных сражениях Второй Мировой войны. В нём сообщается, что Красная армия входит в Берлин и захватывает Рейхстаг; в жесточайшей схватке, которая длится почти три недели, погибает более полумиллиона солдат и мирных жителей.
+
+Советская кампания
+Советская кампания содержит 3 эпизода, состоящих в сумме из 7 миссий, включая обучающую. Главным героем всех эпизодов является рядовой Василий Иванович Козлов. Все три эпизода (за исключением обучающей миссии первого эпизода) происходят в Сталинграде.
+
+Зимняя война
+Обучение красноармейцев
+17 декабря 1941 года, около 30 км к западу от Москвы, СССР
+Обучающая миссия, в которой комиссар Летлёв обучает новобранцев владению оружием и метанию гранат. После тренировки начинается немецкая атака, и вы отправитесь на склад, используете дымовые гранаты и уничтожите самоходный миномёт.
+Подрывные работы
+2 декабря 1942 года, Сталинград, СССР
+Под командованием лейтенанта Леонова в роли советского подрывника необходимо захватить улицу Солнечную и взорвать городской исполнительный комитет, занятый вражескими солдатами.
+"Ни шагу назад!"
+Восстановление связи
+8 декабря 1942 года, Сталинград, СССР.
+Немцы перерезали телефонный провод, чтобы отрубить связь с группой. В составе двух небольших отрядов необходимо устранить повреждения провода. После наладки связи к врагу подходят подкрепления, в том числе несколько танков. Для успешного завершения эпизода необходимо уничтожить все вражеские единицы.
+Вокзал №1
+8 декабря 1942 года, Сталинград, СССР.
+Продолжение предыдущей миссии. Нужно проникнуть на вокзал по надземным трубам, захватить его, отбивать атаки врагов. После этого нужно зачистить несколько зданий в округе.
+Сталинградская крепость
+Уличные бои
+15 января 1943 года, Сталинград, СССР.
+Необходимо с боем пробраться до Горсовета. По пути придётся зачистить несколько зданий и взорвать два танка с помощью взрывчатки.
+Сталинградский Горсовет
+15 января 1943 года, Сталинград, СССР.
+Продолжение предыдущей миссии. Основной задачей является достижение здания Горсовета.
+Товарищ снайпер
+15 января 1943 года, Сталинград, СССР.
+Главная задача — зачистка и оборона здания Горсовета. В числе подзадач — отстрел немецких снайперов, после чего необходимо отбить несколько массированных атак противника. Эта миссия является последней в советской кампании.
+Британская кампания
+Британская кампания состоит из 4 эпизодов, которые в свою очередь делятся на 13 миссий. Протагонист второго эпизода — командир танка капитан Дэвид Уэлш. Герой остальных эпизодов — сержант Джон Дэвис. События первых трёх эпизодов происходят в Северной Африке, а четвёртого — в Нормандии, Франция.
+
+Битва за Эль-Аламейн
+Диверсионный рейд
+29 октября 1942 года, 25 миль к югу от Эль-Аламейна, Северный Египет
+Необходимо подавить вражеские огневые точки в тылу противника, мешающие продвижению войск союзников на Эль-Аламейн, уничтожить склады боеприпасов и запасы топлива противника. Также необходимо раздобыть стратегически важные документы.
+Держать оборону!
+29 октября 1942 года, 30 миль к югу от Эль-Аламейна, Северный Египет
+Необходимо удержать город и уничтожить вражеские танки с помощью артиллерии.
+Операция "Сверхбросок"
+3 ноября 1942 года, у линии обороны Эль-Аламейна, Северный Египет
+Попытка 7-й бронетанковой дивизии прорваться через коридор в минном противотанковом поле Роммеля длиной в 30 миль — «Сад дьявола» — последнее препятствие между войсками союзников и корпусом «Африка». Действуя в составе 7-й бронетанковой дивизии, необходимо уничтожить несколько пулемётных точек и бронебойных расчётов, а также захватить вражеский пункт связи и сообщить командованию об успехе операции.
+Начало конца
+6 ноября 1942 года, Эль-Даба, Северный Египет
+Нацистские войска отступают к городку Эль-Даба на Средиземноморском побережье, к западу от Эль-Аламейна. Нужно уничтожить расчеты береговых орудий и дать сигнал кораблям. Затем надо раздобыть стратегически важные документы и вернуться на пристань.
+Танковые отряды
+Танковый бросок
+15 января 1943 года, 160 миль к юго-востоку от Триполи, Северо-западная Ливия
+Атака британских танков 7-й бронетанковой дивизии на танки корпуса «Африка».
+Высота 88
+18 января 1943 года, 65 миль к юго-востоку от Триполи, Северо-западная Ливия
+Необходимо обойти с фланга и уничтожить преимущественное количество танков противника, а также несколько зенитных расчетов.
+Разгром Роммеля
+На броневике
+10 марта 1943 года, Тужен, Тунис
+Сержант Джон Дэвис, капитан Прайс и рядовой МакГрегор попадают в окружение немецкими отрядами и должны выбраться к своим, используя немецкую бронемашину (протагонист занимает место пулемётчика). Отряды союзников покидают Тужен и возвращаются на следующий день в сопровождении танков Крусейдер.
+Взятие Тужена
+11 марта 1943 года, Тужен, Тунис
+Контратака в сопровождении танков Крусейдер.
+Холмы Матмата
+30 марта 1943 года, Матмата, Тунис
+Автоколонна попадает в засаду в городке Матмата. Протагонисту под руководством капитана Прайса предстоит зачистить город, уничтожить зенитный расчёт, захватить зенитное орудие и уничтожить эскадрилью немецких самолётов.
+Битва за Кан
+Военнопленные — Перекрёсток — Тигр
+11-12 июня 1944 года, Бельто — Анктовиль — Сен-Луэ, к востоку от Кана, Франция
+Для атаки на Кан союзным войскам необходимо расчистить дорогу для автоколонны с войсками. «Пустынным крысам» (7-й бронетанковой дивизии) под командованием капитана Прайса приказано провести разведку боем в деревне Бельто. В ходе операции будут обнаружены раненые солдаты американской армии, для вывоза которых из деревни потребуется грузовик. Следующей точкой на пути союзников становится деревня Анктовиль, в которой «крысам» приказано захватить перекресток и близлежащие фермы для обеспечения безопасного прохода автоколонны. Ожесточённое сопротивление в лице нескольких десятков немецких солдат и танка Тигр дивизия встречает в городке Сен-Луэ — союзникам будет необходимо захватить и зачистить все ключевые здания.
+Коробочка
+14 июня 1944 года, Амайе сюр Сойль, Франция
+Автоколонна союзников на пути к Кану была подбита немецким танком Тигр, напавшим из засады. Тем самым, который был замечен в Сен-Луэ. 7-я бронетанковая отступила к городку Амайе сюр Сойль, в котором ей предстоит захватить немецкий штаб и оборонять его от наступления вражеских соединений.
+Американская кампания
+Американская кампания состоит из 3 эпизодов, которые поделены на 7 миссий. В первом эпизоде освещается высадка в Нормандии («День Д»). Во втором эпизоде американские войска захватывают одну из стратегических высот под Бергштайном, а в третьем — переправляются через Рейн, расчищая дорогу на Берлин. Протагонистом всех эпизодов является капрал Билл Тейлор.
+
+«День "Д"»
+Битва за Пуэнт-дю-Хок — Оборона Пуэнт-дю-Хок
+6-7 июня 1944 года, пляж Пэнт-дю-Хок, побережье Нормандии, Франция
+Протагонист в составе 2-го батальона рейнджеров десантируется на пляж Пуант-дю-Хок с миссией подавления береговых позиций противника и уничтожения захваченных французских орудий. На следующий день рейнджерам придётся отступать под натиском контратаки.
+Зернохранилище
+14 июля 1944 года, Бомон-Гаага, Франция
+После высадки союзных войск в Европе началось освобождение французских городов и деревень от вражеских войск. Одним из таким городков на пути 2-го батальона стал Бомон-Гаага, высотные здания которого вражеские снайперы использовали как огневые точки. Основной задачей является зачистка основных зданий города, занятие позиции на вершине зернохранилища удержание городка во время контратаки.
+Высота 400
+Бергштайн — Рейнджеры идут первыми — Бой за высоту 400
+6-8 декабря 1944 года, Бергштайн, Германия
+Войска союзников пересекают границу Бельгии с Германией и сталкиваются с ожесточенным сопротивлением близ городка Бергштайн. Высота 400[1] — ключевая позиция, с которой вражеские наводчики наблюдают за всеми манёврами союзников. 2-му батальону рейнджеров приказано дойти до дальней окраины Бергштайна и обеспечить плацдарм для боя за высоту 400. На следующий день рейнджеры должны пробиться через минные поля и вражеские ДОТы, добраться до высоты 400, отбить её и отразить контрнаступление противника до прибытия подкрепления.
+Переправа через Рейн
+Переправа
+24 марта 1945 года, Валлендар, Германия
+Операция взятия городка Валлендар при переправе через Рейн. Необходимо зачистить город от вражеских солдат и танков.
+Персонажи
+Протагонисты
+Флаг СССР Рядовой Василий Иванович Козлов — протагонист советской кампании, красноармеец 13-ой гвардейской стрелковой дивизии.
+Флаг Великобритании Сержант Джон Дэвис — протагонист британской кампании, сержант 7-ой бронетанковой дивизии.
+Флаг Великобритании Капитан Дэвид Уэлш — протагонист британской кампании, капитан 7-ой бронетанковой дивизии, командир танка.
+Флаг США Капрал Билл Тейлор — протагонист американской кампании, капрал (позже сержант) роты «Д» во 2-ом батальоне рейнджеров.
+Антагонисты
+Флаг Третьего рейха Пленный немец (†) — офицер войск Третьего Рейха. Убит комиссаром Летлевым.
+Флаг Третьего рейха Немецкий снайпер (†) — снайпер войск Третьего Рейха. Убит Василием Козловым.
+Второстепенные персонажи
+Флаг СССР Комиссар Летлев — комиссар 13-ой гвардейской стрелковой дивизии.
+Флаг СССР Лейтенант Леонов (†) — первый командир 13-ой гвардейской стрелковой дивизии. Погиб.
+Флаг СССР Лейтенант Дмитрий Вольский — командир роты в 13-й гвардейской стрелковой дивизии.
+Флаг СССР Рядовой Павел Семёнов — боец Красной армии.
+Флаг Великобритании Капитан Прайс — капитан 7-ой бронетанковой дивизии. Участвовал в событиях игры Call of Duty.
+Флаг Великобритании Рядовой МакГрегор — боец 7-й бронетанковой дивизии в составе отряда опытного капитана Прайса.
+Флаг Великобритании Рядовой Бойл (†) — боец 7-й бронетанковой дивизии. Погиб.
+Флаг Великобритании Сержант Карвер (†) — боец 7-й бронетанковой дивизии. Погиб.
+Флаг Великобритании Капитан Бервелл (†) — боец 7-й бронетанковой дивизии. Погиб.
+Флаг США сержант Рэндалл — сержант (позже лейтенант) роты "Д" 2-го батальона рейнджеров.
+Флаг США Рядовой Брейберн (†) — рядовой роты "Дог" 2-го батальона рейнджеров. Погиб.
+Флаг США Рядовой Дональд МакКлоски — рейнджер из роты "Д".
+Флаг США Полковник Блейк — полковник 2-го батальона рейнджеров.
+Флаг США Лейтенант Коффи (†) — лейтенант армии США. Погиб.
+Флаг США Лейтенант Мак Майерс (†) — лейтенант армии США. Погиб.
+Флаг США Рядовой Миллер (†) — рядовой 2-го батальона рейнджеров. Погиб.
+Флаг США Рядовой Росетти (†) — рядовой 2-го батальона рейнджеров. Погиб.
 </body>
 
 </html>
